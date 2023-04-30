@@ -13,10 +13,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
-        <title>Frontend Mentor | Results summary component</title>        
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+        <title>Frontend Mentor | Results summary component</title>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>{children}
+        <footer>
+          <div className='w-[80%] text-xs mt-[5%] text-center mx-auto lg:w-[34%]' >
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Tushar Biswas</a>.
+          </div>
+        </footer>
+      </body>
     </html>
   )
 }
